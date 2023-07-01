@@ -1,0 +1,40 @@
+import java.io.Serializable;
+public class Student implements Serializable {
+  private static final long serialVersionUID = 12345678L
+  private String firstName;
+  private String lastName;
+  private String major;
+
+  public Student() {
+  }
+
+  public Student(String firstName, String lastName, String major) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.major = major;
+  }
+
+  public String getFirstName() {
+    return this.firstName;
+  }
+
+  public void setFirstName(String firstName) {
+    this.firstName = firstName;
+  }
+
+  public String getLastName() {
+    return this.lastName;
+  }
+
+  public void setLastName(String lastName) {
+    this.lastName = lastName;
+  }
+
+  public String getMajor() {
+    return this.major;
+  }
+
+  public void setMajor(String major) {
+    this.major = major;
+  }
+}
